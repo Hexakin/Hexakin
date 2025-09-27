@@ -8,12 +8,12 @@ type Props = Omit<ImageProps, "src"> & {
 };
 
 const ThemeImage = (props: Props) => {
-  const { srcLight, srcDark, ...rest } = props;
+  const { srcLight, srcDark, alt, ...rest } = props;
 
   return (
     <>
-      <Image {...rest} src={srcLight} className="imgLight" />
-      <Image {...rest} src={srcDark} className="imgDark" />
+      <Image {...rest} alt={alt} src={srcLight} className="imgLight" />
+      <Image {...rest} alt={alt} src={srcDark} className="imgDark" />
     </>
   );
 };
@@ -94,7 +94,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to turborepo.com →
+          Go to turborepo.com {'->'}
         </a>
       </footer>
     </div>
