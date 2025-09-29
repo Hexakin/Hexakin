@@ -32,7 +32,7 @@ This repository hosts a Turborepo workspace with two Next.js applications (`apps
   ```
 - Start a single app:
   ```sh
-  pnpm --filter web run dev   # Next.js app at http://localhost:3000
+  pnpm --filter web run dev   # Next.js app at http://localhost:3002
   pnpm --filter docs run dev  # Docs app at http://localhost:3001
   ```
 - Build and type-check everything:
